@@ -1,10 +1,10 @@
-# 1 "linda.c"
+# 1 "lola.c"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 31 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
-# 1 "linda.c"
+# 1 "lola.c"
 # 1 "/usr/include/stdio.h" 1 3 4
 # 27 "/usr/include/stdio.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -722,17 +722,17 @@ extern int __uflow (FILE *);
 extern int __overflow (FILE *, int);
 # 873 "/usr/include/stdio.h" 3 4
 
-# 2 "linda.c" 2
+# 2 "lola.c" 2
 
 
 
 
 
 
-# 7 "linda.c"
+
+# 8 "lola.c"
 int main(void)
 {
-printf("Hi linda\n");
-printf("How nice to see you here\n");
-return (0);
+ printf("Holberton School");
+ return (0);
 }
