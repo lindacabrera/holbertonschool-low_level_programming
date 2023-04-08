@@ -4,7 +4,7 @@
  *
  * Description: This program prints all the numbers of base 16 in lowercase
  *
- * Parameter: n
+ * Parameter: i
  *
  * Return: Always 0 (Success)
  */

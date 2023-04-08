@@ -1,10 +1,11 @@
 #include <stdio.h>
 /**
- * main - I sometimes suffer from insomnia.
+ * main - Numbers
  *
- * Description: I never thought that it would pay off
+ * Description: prints all single digit numbers of base 10 starting from 0
  *
- * Parameter: ch
+ * Parameter: n
+ *
  * Return: Always 0 (Success)
  */
 
