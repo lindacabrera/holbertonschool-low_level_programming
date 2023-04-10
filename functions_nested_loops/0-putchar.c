@@ -1,14 +1,24 @@
-#include "stdio.h"
+#include "main.h"
 
 /**
- * main - Print _putchar
+ * main -Print
  *
- *Description: This program prints _putchar
+ * Description: this program print using putchar
  *
- * Return: Always 0 (Success).
+ * Parameter: c
+ *
+ *Return: Always 0 (Success)
  */
+
 int main(void)
 {
-		printf("_putchar\n");
-	return (0);
+	char c[] = "_putchar\n";
+	int i = 0;
+
+	while (c[i] != '\0')
+	{
+	  _putchar(c[i]);
+		i++;
+	}
+return (0);
 }
