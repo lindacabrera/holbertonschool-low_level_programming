@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *_islower - look slowercase
+ * _islower - look slowercase
  *
- *Description: function  return 1 if lowercase 0 otherwise
+ * Description: function  return 1 if lowercase 0 otherwise
  *
- * Parameter: c
+ * Parameter: c provide a value to check
  *
  * Return: Always 0.
  */
