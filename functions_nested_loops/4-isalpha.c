@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *_isalpha - alphabetic caracter
+ * _isalpha - alphabetic caracter
  *
- *Description: This function look for alphabetic caracter
+ * Description: This function look for alphabetic caracter
  *
- * Parameter: c
+ * @c: parameter to be checked
  *
  * Return: Always 0.
  */

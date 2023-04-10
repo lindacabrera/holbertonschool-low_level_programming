@@ -4,7 +4,7 @@
  *
  * Description: function  return 1 if lowercase 0 otherwise
  *
- * Parameter: c provide a value to check
+ * @c: Parameter provide a value to check
  *
  * Return: Always 0.
  */
