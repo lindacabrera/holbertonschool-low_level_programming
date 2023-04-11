@@ -14,9 +14,9 @@ void jack_bauer(void)
 	int i = 0, j = 0;
 	int a = 0, b = 0;
 
-	for (i = 0; i <= 5; i++)
+	for (i = 0; i <= 2; i++)
 	{
-		for (a = 0; a <= 9; a++)
+		for (a = 0; a <= 3; a++)
 		{
 			for (j = 0; j <= 5; j++)
 			{
