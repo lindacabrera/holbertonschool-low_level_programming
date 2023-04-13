@@ -1,0 +1,16 @@
+#include "main.h"
+
+/**
+ * add - add two values
+ *
+ * Description: this program adds two integers and returns the result
+ *
+ * @a, @b: Parameters
+ *
+ * Return: last digit of n
+ */
+
+int add(int a, int b)
+{
+return  (a + b);
+}
