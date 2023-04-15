@@ -1,0 +1,8 @@
+CC = gcc
+SRC = main school
+OBJ = $@.o
+NAME = school
+
+all: main school
+	$(CC) -c -o $(SRC) $(OBJ)
+	${CC} ${OBJ} -o ${NAME}
