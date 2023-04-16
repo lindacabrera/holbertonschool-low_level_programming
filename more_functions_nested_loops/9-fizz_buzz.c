@@ -5,7 +5,9 @@
  *
  * Description: This program prints the numbers from 1 to 100 ! 3 and 5 x
  *
-  */
+ * Return: o always
+ *
+ */
 
 int main(void)
 {
