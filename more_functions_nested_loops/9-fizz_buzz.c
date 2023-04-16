@@ -23,28 +23,28 @@ int main(void)
 		if (t_m == 0 && f_m == 0)
 		{
 			printf("FizzBuzz");
-			printf(" ");
 		}
 		else
 		{
 			if (t_m == 0)
 			{
 				printf("Fizz");
-				printf(" ");
 			}
 			else
 			{
 				if (f_m == 0)
 				{
 					printf("Buzz");
-					printf(" ");
 				}
 				else
 				{
 					printf("%d", i);
-					printf(" ");
 				}
 			}
+		}
+		if (i != 100)
+		{
+			printf(" ");
 		}
 	}
 	printf("\n");
