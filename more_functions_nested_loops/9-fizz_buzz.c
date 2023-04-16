@@ -3,7 +3,7 @@
 /**
  * main - Fizz-Buzz
  *
- * Description: This program prints the numbers from 1 to 100 avoiding 3 and 5 x
+ * Description: This program prints the numbers from 1 to 100 ! 3 and 5 x
  *
   */
 
@@ -39,12 +39,11 @@ int main(void)
 				}
 				else
 				{
-					printf("%d",i);
+					printf("%d", i);
 					printf(" ");
 				}
 			}
 		}
 	}
-	putchar('\n');
 	return (0);
 }
