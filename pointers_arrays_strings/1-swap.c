@@ -5,8 +5,8 @@
  *
  * Description: this function that swaps the values of two integers
  *
- * @*a: first Parameter
- * @*b: Second parameter
+ * @a: first Parameter to swap
+ * @b: Second parameter to swap
  *
  */
 
