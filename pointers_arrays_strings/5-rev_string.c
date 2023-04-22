@@ -4,7 +4,7 @@
  *
  * Description: This function that reverses a string
  *
- * Parameter: @s
+ * @s:,string to reverse
  *
  */
 
