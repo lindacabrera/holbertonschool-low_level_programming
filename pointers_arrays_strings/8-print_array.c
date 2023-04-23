@@ -14,14 +14,14 @@ void print_array(int *a, int n)
 {
 	int i = 0;
 
-	while (i < (n - 1))
+	for (i = 0; i < n; i++)
 	{
 		_putchar(a[i]);
-		_putchar(',');
-	}
-	if (i == n)
-	{
-		_putchar(a[i]);
+
+		if (i < n - 1)
+		{
+			_putchar(',');
+		}
 	}
 	_putchar('\n');
 }
