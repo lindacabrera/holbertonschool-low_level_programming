@@ -5,11 +5,11 @@
   *
   * Description: This function returns the value of x raised to the power of y.
   *
-  * @x: value to be raised
+  * @x: Base
   *
-  * @y: power value
+  * @y: Exponent
   *
-  * Return: value of x raised to power y
+  * Return: value multiplies y times
   */
 
 int _pow_recursion(int x, int y)
