@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		if (argc == 1)
 		{
 			return (0);
-		} else if ('0' > *argv[j] || *argv[j] > '9')
+		} else if (!isdigit(*argv[j]))
 		{
 			printf("Error\n");
 			return (1);
