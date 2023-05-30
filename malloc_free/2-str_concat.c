@@ -2,6 +2,16 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+  * _strlen - Funtion
+  *
+  * Description: This function counts the len of string
+  *
+  * @a: string to count len
+  *
+  * Return: pointer to a 2 dimensional array of integers or Null if fails
+  */
+
 int _strlen(const char *a)
 {
 	int i = 0;
@@ -27,7 +37,7 @@ int _strlen(const char *a)
 
 char *str_concat(char *s1, char *s2)
 {	int i, j, x, y;
-	char* s;
+	char *s;
 
 	if (s1 == NULL || s2 == NULL)
 	{
@@ -35,15 +45,15 @@ char *str_concat(char *s1, char *s2)
 	}
 	i = _strlen(s1);
 	j = _strlen(s2);
-	s =  malloc(sizeof(char)*(i + j) + 1);
-        for (x = 0; x <= i; x++)
-	{
-		s[x] = s1[x];
-	}
-	for (y = 0; y <=j  ; y++)
-	{
-		s[i + y] = s2[y];
-	}
+	s =  malloc(sizeof(char) * (i + j) + 1);
 
+		for (x = 0; x <= i; x++)
+		{
+			s[x] = s1[x];
+		}
+		for (y = 0; y <= j; y++)
+		{
+			s[i + y] = s2[y];
+		}
 	return (s);
 }
