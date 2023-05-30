@@ -39,14 +39,22 @@ char *str_concat(char *s1, char *s2)
 {	int i, j, x, y;
 	char *s;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
 	}
 	i = _strlen(s1);
 	j = _strlen(s2);
-	s =  malloc(sizeof(char) * (i + j) + 1);
+	s =  malloc(sizeof(char) * (i + j + 1));
+	if (s == NULL)
+	{
+		return (NULL);
 
+	}
 		for (x = 0; x <= i; x++)
 		{
 			s[x] = s1[x];
