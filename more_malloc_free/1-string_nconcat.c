@@ -42,6 +42,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int x, y;
 	char *s;
 
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
 	i = _strlen(s1);
 	j = _strlen(s2);
 
