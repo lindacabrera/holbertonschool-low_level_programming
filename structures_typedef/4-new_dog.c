@@ -1,8 +1,33 @@
 #include "dog.h"
 #include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 
+
+/**
+ * _strcpy - copies the string pointed on scr and save on dest
+ *
+ * this function copies the string pointed to by src, including the terminating
+ * null byte (\0), to the buffer pointed to by dest.
+ *
+ * @src: parametres that provides the string
+ *
+ * @dest: paramter to storaged the string
+ *
+ * Return: string saved on dest.
+ *
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+	int i = 0;
+
+	while (src[i] != '\0')
+	{
+		*(dest + i) = *(src + i);
+		i++;
+	}
+	*(dest + i) = '\0';
+	return (dest);
+}
 
 /**
   * _strlen - Funtion
@@ -25,7 +50,6 @@ int _strlen(const char *a)
 	return (i);
 }
 
-
 /**
   * new_dog - Funtion
   *
@@ -42,25 +66,25 @@ int _strlen(const char *a)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *i_dog;
+	dog_t *n_dog;
 
-	i_dog = malloc(sizeof(i_dog));
-	if (i_dog == NULL || !(name) || !(owner))
+	n_dog = malloc(sizeof(*n_dog));
+	if (n_dog == NULL || !(name) || !(owner))
 	{
-		free(i_dog);
-		free(i_dog->name);
-		free(i_dog->owner);
+		free(n_dog);
+		free(n_dog->name);
+		free(n_dog->owner);
 		return (NULL);
 	}
 	{
-		i_dog->name = malloc(sizeof(char) * ((_strlen(name)) + 1));
-		i_dog->owner = malloc((sizeof(char) * ((_strlen(owner)) + 1)));
+		n_dog->name = malloc(_strlen(name) + 1);
+		n_dog->owner = malloc(_strlen(owner) + 1);
 
-		strcpy(i_dog->name, name);
-		i_dog->age = age;
-		strcpy(i_dog->owner, owner);
+		_strcpy(n_dog->name, name);
+		n_dog->age = age;
+		_strcpy(n_dog->owner, owner);
 
 	}
-	return (i_dog);
+	return (n_dog);
 
 }
