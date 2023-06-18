@@ -18,15 +18,37 @@
 int main(int argc, char *argv[])
 {
 	int (*operation)(int, int);
-	int i = 0;
+	int a, b;
 
+	/*int i = 0;
 	printf("The number of command-line arguments is: %d\n", argc);
-
 	for (i = 0; i < argc; i++)
 	{
         printf("Argument %d: %s\n", i, argv[i]);
+	}*/
+
+	if (argc != 4)
+	{
+		printf("Error\n");
+		exit(98);
 	}
-	operation = 3-op_functions(argv[2]);
-	printf("%d\n", operation(atoi(argv[1]), atoi(argv[3])));
+	operation = get_op_func(argv[2]);
+
+	if (!operation)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
+	if (operation == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+
+	printf("%d\n", operation(a, b));
 	return(0);
 }
