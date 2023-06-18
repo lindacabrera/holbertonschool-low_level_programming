@@ -10,7 +10,7 @@
   *
   * @s: opetaror passed as argument to the program
   *
-  * Returns: Pointer to the functionto the operator given as a parameter
+  * Return: Pointer to the functionto the operator given as a parameter
   * 0 if fails
   *
   */
