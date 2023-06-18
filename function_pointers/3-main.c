@@ -3,13 +3,13 @@
  #include <stdio.h>
 
 /**
+  * main - funtion
   *
+  * Description: This function checks operation)
   *
-  * Description: This function
+  * @argc: number of arguments in operation funtion
   *
-  * @a: Fist number
-  *
-  * @b: Second number
+  * @argv: argumentos in operation funtion
   *
   * Return: result
   *
@@ -20,12 +20,6 @@ int main(int argc, char *argv[])
 	int (*operation)(int, int);
 	int a, b;
 
-	/*int i = 0;
-	printf("The number of command-line arguments is: %d\n", argc);
-	for (i = 0; i < argc; i++)
-	{
-        printf("Argument %d: %s\n", i, argv[i]);
-	}*/
 
 	if (argc != 4)
 	{
@@ -50,5 +44,5 @@ int main(int argc, char *argv[])
 	b = atoi(argv[3]);
 
 	printf("%d\n", operation(a, b));
-	return(0);
+	return (0);
 }
